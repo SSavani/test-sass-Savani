@@ -1,0 +1,15 @@
+@mixin transition-ease{
+  transition: all 0.3s ease-in-out;
+}
+
+@mixin onhover {
+  background-color: $highlight-link-background;
+  color: $highlight-link-text;
+  font-weight: bold;
+}
+
+@mixin flex($direction){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+}

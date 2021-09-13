@@ -1,7 +1,155 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body,
 html {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #242e42;
+  height: 100vh;
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+.menu {
+  padding: 10px 15px 10px 15px;
+  margin: 0px 20px 7px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  border-bottom: 1px solid black;
+}
+.menu-title {
+  font-size: x-large;
+}
+.menu-title h1 {
+  font-size: x-large;
+  display: inline;
+}
+.menu-btn {
+  font-size: x-large;
+  background-color: transparent;
+  color: #657d95;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.menu-btn.open {
+  transform: rotate(180deg);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  padding-left: 30px;
+  max-height: 100%;
+  max-width: 20%;
+  visibility: hidden;
+  transform: translate3d(-100%, 0, 0);
+  color: #8b9aac;
+  transition: all 0.3s ease-in-out;
+}
+.nav-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+  padding: 10px 0px 20px 20px;
+  width: 100%;
+}
+.nav-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav-home-avatar {
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-home-avatar img {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+.nav-home-title {
+  font-size: 1rem;
+}
+.nav-home-title:hover {
+  cursor: default;
+}
+.nav-home-title i {
+  font-size: 0.75rem;
+  color: #1f8efa;
+}
+.nav-home-title i:hover {
+  cursor: pointer;
+}
+.nav-home-address {
+  font-size: 0.75rem;
+}
+.nav-home-address:hover {
+  cursor: default;
+}
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  height: 100%;
+}
+.nav-menu_item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 5px 0px 0px 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.nav-menu_link {
+  color: #8b9aac;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 90px 15px 20px;
+  border-left: 10px solid transparent;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.nav-menu_link:hover {
+  background-color: #20293c;
+  color: #1f8efa;
+  font-weight: bold;
+  border-left: 10px solid #1f8efa;
+}
+.nav.open {
+  visibility: visible;
+  transform: translate3d(0, 0, 0);
 }
