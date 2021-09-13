@@ -19,7 +19,6 @@
     "url": "https://github.com/cadent-front-end/test-sass/issues"
   },
   "homepage": "https://github.com/cadent-front-end/test-sass#readme",
-  "dependencies": {},
   "devDependencies": {
     "live-server": "^1.2.1",
     "sass": "^1.17.2"
